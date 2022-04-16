@@ -4,7 +4,7 @@ void sieve()
   int maxN=1000000;
   for(int i=1;i<=maxN;i++)
   {
-  is_prime[i]=1;
+    is_prime[i]=1;
   }
   is_prime[0]=0;
   is_prime[1]=0;
@@ -30,5 +30,15 @@ void sieve()
 This Algorithm will intialize 0 to the composite numbers[Index of Array]
 and 1 to the Prime numbers
 */
+/* 
+You Can Now Print all Prime numbers from 0 to N(N<=1000000) by using this :
+*/
+for(int k=0;k<=N;k++)
+{
+  if(is_prime[k]==1)
+  {
+    cout<<is_prime[k]<<" ";
+  }
+}
   
   
